@@ -13,25 +13,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form submission handler
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form values
-    const name = this.querySelector('input[type="text"]').value;
-    const email = this.querySelector('input[type="email"]').value;
-    const message = this.querySelector('textarea').value;
-    
-    // In a real application, you would send this data to a server
-    alert(`Thank you for your message, ${name}! We'll get back to you soon.`);
-    
-    // Clear form
-    this.reset();
-});
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = this.querySelector('input[type="text"]').value;
+        const email = this.querySelector('input[type="email"]').value;
+        const message = this.querySelector('textarea').value;
+        
+        // In a real application, you would send this data to a server
+        alert(`Thank you for your message, ${name}! We'll get back to you soon.`);
+        
+        // Clear form
+        this.reset();
+    });
+}
 
 // Add scroll effect to header
+const header = document.querySelector('header');
 let lastScroll = 0;
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > lastScroll && currentScroll > 100) {
