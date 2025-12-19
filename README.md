@@ -6,6 +6,12 @@ A modern, responsive portfolio website deployed on GitHub Pages.
 
 Visit the live site: [Portfolio Website](https://rigvida04.github.io/Portfolio1/)
 
+## Preview
+
+![Portfolio Website](https://github.com/user-attachments/assets/e12ca33a-7da8-4311-a37f-77262f641c07)
+
+📸 [View all screenshots](SCREENSHOTS.md) - See detailed views of all sections
+
 ## Features
 
 - Responsive design that works on all devices
